@@ -4,40 +4,40 @@ Buiding the clone of practo.in using HTML CSS and Javascript. Major pages includ
 <ul>
   <li>Clone the repo and run the app.</li>
   <ul>
-    <li>https://github.com/avinashpanchal123/constructweek_porter_clone</li>
+    <lihttps://github.com/AbhishekKumarJha3098</li>
     <li>Execute the practo home.html file in the browser, and enjoy our website</li>
   </ul>
 </ul>
-## Built with
+<h3>Built with</h3>
 <ul>
   <li>HTML</li>
   <li>CSS</li>
   <li>JS DOM</li>
 </ul>
-## Used libraries
+<h3>Used libraries<./h3>
 <ul>
   <li>Font awesome</li>
   <li>Google fonts</li>
   <li>Google Icons</li>
   
 </ul>
-## Created Pages 
+<h3>Created Pages</h3> 
 <ul>
   <li>Landing Page(Home Pge)</li>
   <li>Find Doctors</li>
   <li>Video Consults</li>
   <li>Medicines</li>
 </ul>
-## Functionalities Added
+<h3>Functionalities Added</h3>
 <ul>
   <li>Added Slide Show Functionality</li>
   <li>Added Aress Enging Bar using Local Storage and Debouncing</li>
   
 </ul>
-## Team Members 
+<h3> Team Members </h3>
 <ul>
-  <li><a href=">Kajal Kumari</a></li>
-  <li><a href="https://github.com/AbhishekKumarJha3098">Abhishek Kumar Jha</a></li>
-  <li><a href="">karunes ranjan</a></li>
-  <li><a href="">Pankaj Kumar</a></li>
+  <li><Kajal Kumari</a></li>
+  <li><a href="https://github.com/AbhishekKumarJha3098">Abhishek Kumar Jha</li>
+  <li>karunes ranjan</li>
+  <li>Pankaj Kumar</li>
  </ul>
