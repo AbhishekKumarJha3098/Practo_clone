@@ -39,5 +39,5 @@ Buiding the clone of practo.in using HTML CSS and Javascript. Major pages includ
   <li>Abhishek Kumar Jha</li>
   <li>karunes ranjan</li>
   <li>Pankaj Kumar</li>
-    <li><Kajal Kumari</li>
+  <li><Kajal Kumari</li>
  </ul>
