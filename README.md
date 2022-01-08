@@ -8,13 +8,13 @@ Buiding the clone of practo.in using HTML CSS and Javascript. Major pages includ
     <li>Execute the practo home.html file in the browser, and enjoy our website</li>
   </ul>
 </ul>
-<h3>Built with</h3>
+### Built with
 <ul>
   <li>HTML</li>
   <li>CSS</li>
   <li>JS DOM</li>
 </ul>
-<h3>Used libraries<./h3>
+<h3>Used libraries</h3>
 <ul>
   <li>Font awesome</li>
   <li>Google fonts</li>
@@ -36,8 +36,8 @@ Buiding the clone of practo.in using HTML CSS and Javascript. Major pages includ
 </ul>
 <h3> Team Members </h3>
 <ul>
-  <li><Kajal Kumari</a></li>
-  <li><a href="https://github.com/AbhishekKumarJha3098">Abhishek Kumar Jha</li>
+  <li><Kajal Kumari</li>
+  <li>Abhishek Kumar Jha</li>
   <li>karunes ranjan</li>
   <li>Pankaj Kumar</li>
  </ul>
