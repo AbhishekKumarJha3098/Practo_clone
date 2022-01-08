@@ -8,7 +8,7 @@ Buiding the clone of practo.in using HTML CSS and Javascript. Major pages includ
     <li>Execute the practo home.html file in the browser, and enjoy our website</li>
   </ul>
 </ul>
-### Built with
+<h3>Built with</h3>
 <ul>
   <li>HTML</li>
   <li>CSS</li>
