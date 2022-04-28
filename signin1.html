@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+   signin
+</title>
+</head>
+
+<body>
+    <div style = " display: flex;">
+        <div>
+        <img src = "https://accounts.practo.com/static/images/illustration.png"/>
+        </div>
+        <div style = "margin : 40px 100px 60px 400px">
+            
+
+    
+
+    <h1 style = "text-align: center;color : red">Signin</h1></br></br> </br></br> </br>
+    <div style = "border : 1px solid rgb(126, 53, 53); height : 300px; padding : 50px">
+
+    <form onSubmit = signin(event) id = "myform" style = "text-align: center">
+
+
+<label style = "text-align: center;color : red">Email:</label>
+ <input type = "email" id = "email" placeholder = "Email"> </br> </br>
+
+
+ <label style = "text-align: center;color : red">Password:</label>
+ <input type = "password" id = "password" placeholder = "Password"> </br> </br>
+
+<input type = "submit"/>
+    </div>
+</form>
+
+
+<script>
+function signin(e) {
+    e.preventDefault();
+
+
+    let myname = document.getElementById("myform");
+
+   
+    
+    let email = myname.email.value;
+    let password = myname.password.value;
+
+    let all = JSON.parse(localStorage.getItem("user"));
+    
+  all.forEach(function(user)  {
+      if (email == user.email && password == user.password) {
+
+window.location.href = "practo.html" 
+ /* alert ('logged in') */
+
+      }
+      
+  });
+}  
+
+ 
+
+
+</script>
+</body>
+
+</body>

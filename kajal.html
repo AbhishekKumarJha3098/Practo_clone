@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Doctor</title> 
+</head>
+<style>
+    body{
+        margin-top:80px;
+        
+    }
+    .container{
+        position: fixed;
+         top: 0;
+         left: 0;
+        z-index: 9999;
+        display:flex;
+        width:100%;
+        background-color: white;
+        height:65px;     
+    }
+    img{
+        width:110px;
+        height:65px;
+        
+    }
+    #pic{
+        margin:10px 30px 0px 80px;
+       
+    }
+    #large{
+       
+        color:rgb(17, 10, 10);
+        font-family: 'Manrope', sans-serif;
+        font-size:14px;
+       
+    }
+    #small{
+      
+        color: rgb(19, 18, 18);
+        font-size: 12px;
+        font-family:  'Assistant', sans-serif;
+        margin-top:3px;
+       
+       
+    }
+    .d1{
+        margin:20px 10px 0px 10px;
+       
+    }
+    
+    .d2{
+        margin:20px 30px 0px 25px;
+        
+    }
+    #first{
+        color:blue;
+        font-family: 'Manrope', sans-serif;
+        font-size:14px;
+        
+    }
+.wrapper{
+     margin-top:12px ;
+}
+input{
+    width:90px;
+    height:30px;
+    margin:25px 10px 0px 10px;
+}
+.container2{
+    padding:1.5% 0% 0% 0%;
+    background-color: rgb(222, 228, 233);
+    position:relative;
+    text-align:center;
+    color:white;
+    
+}
+.bg{
+  
+    text-align: center;
+  
+    width:100%;
+    height:469px;
+    margin:1% 0% -1.00% 0%;
+   
+}
+#text1{
+   
+    margin-bottom:50px;
+    font-family: 'Manrope', sans-serif;
+    color:rgb(245, 241, 241);
+    position:absolute;
+    top:16%;
+    left:36%;
+    font-size:44px;
+     transform: translate(-50,-50);
+}
+#text2{
+   
+     margin-bottom:15px;
+     font-family: 'Manrope', sans-serif;
+     color:white;
+     font-size: 26px;
+     position:absolute;
+     top:30%;
+     left:43%;
+     transform: translate(-50,-50);
+}
+
+textarea{
+    position:absolute;
+     top:38%;
+     left:22%;
+     transform: translate(-50,-50);
+    
+}
+#texta{
+   
+    margin-right: 30px;
+}
+#textb{
+   
+    margin-right: 30px;
+
+}
+#textc{
+   
+    margin-right: 30px;
+
+}
+#textd{
+    
+    margin-right: 30px;
+
+}
+.categories{
+    display:flex;
+    font-size:16px;
+     color:rgb(199, 186, 186);
+    margin-left:250px;
+   
+    position:absolute;
+    top:50%;
+    left:4.5%;
+    transform: translate(-50,-50);
+   
+}
+#other{
+    margin-right: 30px;
+    margin-top:-2%;
+}
+.container3{
+    display:flex;
+       padding:5px;
+        background-color:#242453;
+        height:30px;
+        height:70px;
+        color:white;
+       
+        margin-top:10px 0px 0px 20px;
+      
+    }
+    #c3{
+        font-family: 'Manrope', sans-serif;
+        font-size:14px;
+         margin:10px 40px 10px 1px;
+       
+    }
+    #outer{
+        display:flex;
+       
+        margin:20px 0px 0px 260px;
+        
+    }
+   
+  .container4{
+    
+      width:100%;
+      height:600px;
+     background-color: rgb(240, 243, 245);
+    
+  }
+  #c4{
+    display:flex;
+  
+   height:400px;
+  }
+  
+  #left{
+   
+   height:400px;
+   width:700px;
+   margin-left:70px;
+   margin-top:80px;
+   
+  }
+  #right{
+  
+   
+   height:400px;
+   width:700px;
+   margin-left:50px;
+  }
+#f1{
+    font-size:38px;
+    font-family: 'Manrope', sans-serif;
+    color:rgb(59, 59, 59);
+    margin-top:20px;
+}
+#f2{
+    font-size:38px;
+    font-family: 'Manrope', sans-serif;
+    color:rgb(61, 61, 61);
+    margin-top:6px;
+}
+#f3{
+   
+    font-family: 'Manrope', sans-serif;
+    color:rgb(94, 91, 91)
+}
+
+button{
+    margin-top:50px ;
+    width:150px;
+    height:40px;
+   
+    background-color: rgb(65, 194, 245);
+    color:white;
+}
+#image{
+    width:40%;
+    height:280px;
+    margin-left:130px;
+    margin-top:40px;
+}
+.container5{
+   
+  
+   height:300px;
+   background-color: rgb(240, 243, 245);
+  }
+  #c5{
+    display:flex;
+   
+    width:100%;
+    height:70px;
+    margin-left:260px;
+    margin-top:70px;
+  }
+#img2{
+   
+    height:70px;
+    width:80px;
+    margin-right:180px;
+}
+.container6{
+   
+    height:600px;
+}
+.container7{
+    
+    background-color: rgb(242, 246, 248);
+    height:600px;
+}
+.container8{
+   
+    height:600px;
+}
+#bx1{
+    height:120px;
+   
+    
+}
+#txt1{
+   
+    width:800px;
+    font-size:36px;
+    font-family: 'Manrope', sans-serif;
+    color:rgb(54, 52, 52);
+    margin:60px 10px 10px 270px;
+    text-align: center;
+}
+#txt2{
+    width:200px;
+    height:48px;
+    margin-left:600px;
+    margin-top:1px;
+    font-size:18px;
+}
+
+p{
+    font-family: 'Manrope', sans-serif;
+}
+#bx2{
+    height:400px;
+   
+    display:flex;
+}
+#bx3{
+    height:50px;
+   
+}
+#im1{
+    border:4px solid whitesmoke;
+    margin:10px;
+    width:300px;
+    height:350px;
+    
+}
+.out_div{
+    
+    display:flex;
+    height:290px;
+    margin-left:230px;
+   
+}
+#left_pic,#med_pic,#right_pic{
+      width:280px;
+      height:150px;
+}
+
+.container9{
+   
+    height:600px;
+    background-color: rgb(242, 246, 248);
+}
+#image1{
+    width:70%;
+    height:370px;
+    margin-left:50px;
+    margin-top:40px;
+}
+.container10{
+    
+    height:600px;
+    
+}
+#image2{
+    width:100%;
+    height:390px;
+    margin-left:70px;
+    margin-top:40px;
+}
+#image3{
+    width:100%;
+    height:400px;
+    margin-left:-90px;
+    margin-top:60px;
+
+}
+#image4{
+    width:50%;
+    height:420px;
+    margin-left:200px;
+    margin-top:40px;
+}
+video{
+    margin-top:100px;
+}
+.container12{
+    background-color: white;
+  
+    height:500px;
+}
+#icon{
+    width:130px;
+    height:40px;
+}
+.last{
+    display:flex;
+    background-color:rgb(222, 227, 230);
+    
+   height:80px;
+
+}
+#flag{
+   
+    display:flex;
+    margin-right:20px;
+    
+}
+#fl1{
+    width:40px;
+    height:20px;
+   margin:10px;
+}
+#n1{
+    margin:10px 5px 5px -3px
+}
+.cont{
+    
+    display:flex;
+    margin-left:340px;
+    height:50px;
+    margin-top:20px;
+}
+</style>
+<body>
+    <div class="container">
+     <div id="pic" >
+         <img src="https://i2.wp.com/www.cosmoderma.healios.co.in/wp-content/uploads/2019/04/practo.png?fit=1586%2C1057"/>
+
+       </div>
+
+       <div class="d1">
+           <div id="first"><b>Find Doctors</b></style></b></div>
+          <div id="small"><b>Book an appointment</b></div>
+      
+       </div>
+
+       <div class="d1">
+        <div id="large"><b>Video Consult</b></div>
+       <div id="small"><b>Consult top doctors</b></div>
+   
+       </div>
+
+
+       <div class="d1">
+        <div id="large"><b>Medicines</b></div>
+       <div id="small"><b>Practo pharmacy</b></div>
+   
+       </div>
+
+      
+       <div class="d1">
+        <div id="large"><b>Labs Tests</b></div>
+       <div id="small"><b>Book test & checkup</b></div>
+   
+        </div>
+
+         
+        <div class="d1">
+            <div id="large"><b>Surgeries</b></div>
+           <div id="small"><b>Expert surgical care</b></div>
+       
+         </div>
+
+         <div class="d2">
+           
+            <section class="wrapper">
+                <select>
+                  <option value="" selected>For Providers</option>
+                  
+                  <option>Practo prime</option>
+                  <option>Software for providers</option>
+                  <option>List your Practice for free</option>
+                  <option>Corpate wellness</option>
+                </select>
+              </section>
+       
+         </div>
+
+         <div class="d2">
+           
+            <section class="wrapper">
+                <select>
+                  <option value="" selected>Security & help</option>
+                  <option>Data Security</option>
+                  <option>Help</option>
+                </select>
+              </section>
+       
+         </div>
+         
+         <div style = "margin : 20px 5px 10px 20px ; border : 1px solid black ; padding : 5px"><a href = "signin1.html">Login / </a>
+            <a href = "signup.html">Signup</a>
+            </div>
+            
+    </div>
+
+    <div class="container2">
+          <img src="https://mk0dinosoftlabs959mu.kinstacdn.com/wp-content/uploads/2019/12/practo-apps.jpg" class="bg" />
+           <div id="text1">Your home for health</div>
+           <div id="text2">Find and Book</div> 
+          
+          <textarea   rows="3" cols="100"> search doctor, clinics</textarea> 
+          <div class="categories">
+            <div id="texta">popular searches: </div>
+            <div id="textb">Dermatologist</div>
+            <div id="textc">Pediatrician </div>
+            <div id="textd">Gynecologist/Obstetrician</div>
+            <div id="other">
+                <section class="wrapper">
+                    <select>
+                      <option  value="" selected>Others</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
+                  </section>
+            </div>
+          </div>
+   
+    </div>
+        
+        <div class="container3">
+            <div id="outer">
+            <div id="c3">consult with a doctor</div>
+            <div id="c3">Order Medicines</div>
+            <div id="c3">View medical records</div>
+            <div id="c3">Book test</div>
+            <div id="c3">Read articles</div>
+            <div id="c3">For healthcare providers</div>
+          </div>
+        </div>
+
+        <div class="container4">
+           <div id="c4">
+              <div id="left">
+                <div id="f1">Safety of your data is our</div>
+                 
+                <div id="f2"><b>top priority</b></div>
+               
+
+                <div id="points">
+
+                <ul id="f3">
+                     <li>Multi-level security checks</li>
+                </ul>
+
+                <ul id="f3">
+                    <li>Multi-level security checks</li>
+                </ul>
+
+                <ul  id="f3">
+                  <li>Multi-level security checks</li>
+                </ul>
+    
+                    
+                </div>
+                <div id="read">
+                    <button>Read More</button>
+                </div>
+                  
+            <div>
+                 
+         </div>
+      </div>
+              <div id="right">
+                  <img src="https://www.practostatic.com/web-assets/home/assets/images/security_1.4f45ac92aba979dac915f864df632d90.png" id="image"/>
+              </div>
+             </div>
+            
+             <!-- container 5 -->
+
+            <div class="container5">
+                <div id=c5 >
+                    <div id="upper">
+                        <img src="https://www.practostatic.com/web-assets/home/assets/images/security_2.654a7085bfa74c726f26b64edaafd9a5.png" id="img2"/>
+                        <div>256-bit</div>
+                        <div>encryption</div>
+                    </div>
+
+                   
+                 
+                  
+                   
+                  <div> 
+                    <img src="https://www.practostatic.com/web-assets/home/assets/images/security_3.a73921ca6e980ed186518d7cb0ce64bf.png" id="img2"/>
+                    <div>ISO 27001</div>
+                    <div>certified</div>
+                  </div>
+                    
+                    
+
+                   <div>
+                    <img src="https://www.practostatic.com/web-assets/home/assets/images/security_4.216e25d35038f0e7f6d8a514727fa67a.png" id="img2"/>
+                    <div>HIPAA</div>
+                    <div>compliant data centers
+
+                    </div>
+                   
+                   </div>
+
+               
+                   <div>
+                    <img src="https://www.practostatic.com/web-assets/home/assets/images/security_5.cf6e04c57178071a67c219b43066ffcf.png" id="img2"/>
+                    <div>DSCI</div>
+                    <div> member</div>
+
+                   </div>
+                      
+                   </div>
+                  
+                   
+             </div>
+             
+             <!-- container 6 -->
+
+             <div class="container6">
+                <div id="c4">
+                   <div id="left">
+                     <div id="f1">Instant appointment with</div>
+                      
+                     <div id="f2">doctors<b>.Guaranteed.</b></div>
+                    
+     
+                     <div id="points">
+     
+                     <ul id="f3">
+                          <li>Multi-level security checks</li>
+                     </ul>
+     
+                     <ul id="f3">
+                         <li>3M+ Patient recommendations</li>
+                     </ul>
+     
+                     <ul  id="f3">
+                       <li>25M Patients/year</li>
+                     </ul>
+         
+                         
+                     </div>
+                     <div id="read">
+                         <button>Find me the right doctor</button>
+                     </div>
+                       
+                 <div>
+                      
+              </div>
+           </div>
+                   <div id="right">
+                       <video width="520" height="340" controls="controls" muted loop autoplay="autoplay" 
+                         src="https://www.practostatic.com/web-assets/home/assets/videos/appointment.700ce682eaec91bf93b6574cb8f09cd0.webm" id="vdo" type="video/mp4"></video>
+                        
+                       </div>
+                   </div>
+             </div>
+             
+             <!-- container 7 -->
+             <div class="container7">
+                <div id="c4">
+
+                    <div id="right">
+                        <video width="520" height="340" controls="controls" muted loop autoplay="autoplay" 
+                          src="https://www.practostatic.com/web-assets/home/assets/videos/appointment.700ce682eaec91bf93b6574cb8f09cd0.webm" id="vdo" type="video/mp4"></video>
+                         
+                        </div>
+
+                   <div id="left">
+                     <div id="f1">skip the waiting room.</div>
+                      
+                     <div id="f2"><b>Consult with a doctor</b></div>
+                    
+     
+                     <div id="points">
+     
+                     <ul id="f3">
+                          <li>Fees starting at ₹99</li>
+                     </ul>
+     
+                     <ul id="f3">
+                         <li>Verified doctors respond in 5 minutes</li>
+                     </ul>
+     
+                     <ul  id="f3">
+                       <li>100% Private and confidential</li>
+                     </ul>
+         
+                         
+                     </div>
+                     <div id="read">
+                         <button>Consult now</button>
+                     </div>
+                       
+                 <div>
+                      
+              </div>
+           </div>
+         
+        </div>
+       
+  </div>
+
+  <!-- container8 -->
+
+  <div class="container8">
+      <div id="bx1">
+         <div id="txt1"><b>Read top article from health experts</b></div> 
+      </div>
+
+      <div id="bx2">
+          <div class="out_div"> 
+        <div id="im1">
+            <img src="https://www.practostatic.com/fit/51e95f45d66437b31ca7e335af726b51450c4983" id="left_pic"/>
+            <p><b>Ors Day-Spread the message</b></p>
+            <p>Ms.Swati Kapoor, Dietitian/Nutritionist</p>
+            <p>1005Likes * 4075Views </p>
+            <p></p>
+        </div>
+       
+         
+        <div id="im1">
+            <img src="https://www.practostatic.com/fit/9c625c22c6f5f3d0fba564752e108561235a9263" id="med_pic"/>
+            <p><b>15 Ways to Keep Your Heart</b></p>
+            <p><b>Healthy and Happy</b></p>
+            <p>Ms.Anju Katara, Dietitian/Nutritionist</p>
+        </div>
+        
+
+        <div id="im1">
+            <img src="https://www.practostatic.com/fit/bfa17fb3580c5abc353cb6bed0e19904653cd81e" id="right_pic"/>
+
+           
+            <p><b>7 More Reasons to Give Up Sugar</b></p>
+            <p>Ms.Swati Kapoor, Dietitian/Nutritionist</p>
+             <p>1005Likes * 4075Views </p>
+           
+        </div>
+    </div>
+        
+      </div>
+
+    <div id="bx3">
+        <div id="btn">
+            <button id="txt2">More articles</button>
+        </div>
+   
+    </div>
+
+
+
+  </div>
+  
+ <!-- container9 -->
+
+  <div class="container9">
+   
+        <div id="c4">
+           <div id="left">
+             <div id="f1">Instant appointment with</div>
+              
+             <div id="f2">doctors<b>.Guaranteed.</b></div>
+            
+
+             <div id="points">
+
+             <ul id="f3">
+                  <li>Multi-level security checks</li>
+             </ul>
+
+             <ul id="f3">
+                 <li>3M+ Patient recommendations</li>
+             </ul>
+
+             <ul  id="f3">
+               <li>25M Patients/year</li>
+             </ul>
+ 
+                 
+             </div>
+             <div id="read">
+                 <button>Find me the right doctor</button>
+             </div>
+               
+         <div>
+              
+      </div>
+   </div>
+           <div id="right">
+            <img src="https://www.practostatic.com/web-assets/home/assets/images/order.c84fc07b0be8a7e8d4db432eb4e606a2.svg" id="image1"/>
+                
+               </div>
+           </div>
+     </div>
+
+  
+        <!-- container10          -->
+
+        <div class="container10">
+   
+            <div id="c4">
+
+                <div id="right">
+                    <img src="https://www.practostatic.com/web-assets/home/assets/images/record.bfc5241f9b15340a32c98eb360d1005a.svg" id="image2"/>
+                        
+                       </div>
+
+               <div id="left">
+                 <div id="f1">All your medical records</div>
+                  
+                 <div id="f2"><b>In one secure app.</b></div>
+                
+    
+                 <div id="points">
+    
+                 <ul id="f3">
+                      <li>256-bit end to end encryption</li>
+                 </ul>
+    
+                 <ul id="f3">
+                     <li>Records are accessible only by you</li>
+                 </ul>
+    
+                 <ul  id="f3">
+                   <li>Access your records across <b>8000+</b> centers</li>
+                 </ul>
+     
+                     
+                 </div>
+                 <div id="read">
+                     <button>Find out more</button>
+                 </div>
+                   
+             <div>
+                  
+          </div>
+       </div>
+               
+               </div>
+         </div>
+     
+           <!-- container 11 -->
+
+           <div class="container9">
+   
+            <div id="c4">
+               <div id="left">
+                 <div id="f1">Leading Healthcare Providers</div>
+                  
+                 <div id="f2"><b>Trust us for Business</b></div>
+                
+    
+                 <div id="points">
+    
+                 <ul id="f3">
+                      <li>Get seen by 25M+ patients on Practo.com</li>
+                 </ul>
+    
+                 <ul id="f3">
+                     <li>The most advanced software for clinics and hospitals</li>
+                 </ul>
+    
+                 <ul  id="f3">
+                   <li>State of the art business analytics for enterprises</li>
+                 </ul>
+     
+                     
+                 </div>
+                 <div id="read">
+                     <button>Learn more</button>
+                 </div>
+                   
+             <div>
+                  
+          </div>
+       </div>
+               <div id="right">
+                <img src="https://www.practostatic.com/web-assets/home/assets/images/provider.c4a3d938da109434de6ce3a9046bbf42.png" id="image3"/>
+                    
+                   </div>
+               </div>
+         </div>
+    
+       <!-- container 12 -->
+
+       <div class="container12">
+        <div id="c4">
+
+            <div id="right">
+                <img src="https://www.practostatic.com/web-assets/home/assets/images/download.a9fb5307ceed47df0af1f39cf4e95519.png" id="image4"/>
+                 
+                </div>
+
+           <div id="left">
+              
+             <div id="f2"><b>Download the Practo app</b></div>
+            
+
+             <div id="points">
+
+             <ul id="f3">
+                  <li>Book appointments and lab tests</li>
+             </ul>
+
+             <ul id="f3">
+                 <li>Order medicines</li>
+             </ul>
+
+             <ul  id="f3">
+               <li>Consult doctors online</li>
+             </ul>
+ 
+             <ul  id="f3">
+                <li> medicine reminders></li>
+              </ul>
+ 
+              <ul  id="f3">
+                <li>Store health records</li>
+              </ul>
+ 
+              <ul  id="f3">
+                <li>Read health tips</li>
+              </ul>
+ 
+             
+                 
+             </div>
+             
+                <div id="read">
+                    <img src="https://www.practostatic.com/web-assets/home/assets/images/google_badge.bfeb9607baa4c7c0b6897ad8c3adbebe.png" id="icon"/>
+                    <img src="https://www.practostatic.com/web-assets/home/assets/images/appstore_badge.adc5473a4cad8e6b9d80f29477b68ae5.png" id="icon"/>
+                 </div>
+            
+               
+         <div>
+              
+      </div>
+   </div>
+ 
+</div>
+
+</div>
+           
+
+    <div class="last">
+        <div class="cont">
+        <div id="flag">
+            <img src="https://www.practo.com/bundles/practopractoapp/images/country_images/flags/india-flag.svg" id="fl1"/>
+            <div id="n1">India</div>
+          </div>
+
+        <div id="flag">
+            <img src="data:image/png;base64,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" id="fl1"/>
+            <div id="n1">Singapore</div>
+          </div>
+
+        <div id="flag">
+            <img src="https://www.practo.com/bundles/practopractoapp/images/country_images/flags/brazil-flag.svg" id="fl1"/>
+            <div id="n1">Brazil</div>
+          </div>
+
+        <div id="flag">
+            <img src="https://www.practo.com/bundles/practopractoapp/images/country_images/flags/philippines-flag.svg" id="fl1"/>
+            <div id="n1">Philippines</div>
+           </div>
+
+        <div id="flag">
+            <img src="https://www.practo.com/bundles/practopractoapp/images/country_images/flags/indonesia-flag.svg" id="fl1"/>
+            <div id="n1">Indonesia</div>
+           </div>
+        </div>
+    </div>
+
+               <!-- footer -->
+
+         
+
+               <div style = "background-color: rgb(50, 50, 146); display : flex; margin : 0px">
+                <div style = "margin :50px 50px 100px ">
+        
+                    <h4 style = "color: white;">Practo</h4>
+        <ul>
+        
+            <li style = "color: white;">About</li>
+             <li style = "color: white;">Blog</li>  
+                <li style = "color: white;">Careers</li>
+                <li style = "color: white;">Press</li>  
+                <li style = "color: white;">Contact Us</li>
+        </ul>
+        
+        
+        
+                </div>
+        
+        
+                <div style = "margin :50px 50px 100px ">
+        
+                    <h4 style = "color: white;">For Patients</h4>
+        <ul>
+        
+          
+        <li style = "color: white;">Search for doctors</li>
+        <li style = "color: white;">Search for clinics</li>
+        <li style = "color: white;">Search for hospitals</li>
+        <li style = "color: white;">Book Diagnostic Tests</li>
+        <li style = "color: white;">Book Full Body Checkups</li>
+        <li style = "color: white;">Practo Plus</li>
+        <li style = "color: white;">Read health articles</li>
+        <li style = "color: white;">Read about medicine</li>
+        <li style = "color: white;">Practo drive</li>
+        <li style = "color: white;">Health app</li>
+        </ul>
+        
+        
+        
+                </div>
+        
+                
+                <div style = "margin :50px 50px 100px ">
+        
+                    <h4 style = "color: white;">For doctors</h4>
+                    <p style = "color: white;">Practo Profile</p>
+        
+                    <h4 style = "color: white;"> For Clinics</h4>
+        <ul>
+        
+          
+        <li style = "color: white;">Ray by Practo</li>
+        <li style = "color: white;">Practo Reach</li>
+        <li style = "color: white;">Ray Tab</li>
+        <li style = "color: white;">Practo Pro</li>
+        
+        </ul>
+        
+        
+        
+                </div>
+        
+                <div style = "margin :50px 50px 100px ">
+        
+                    <h4 style = "color: white;">For Hospitals</h4>
+                    
+        
+                    
+        <ul>
+        
+          
+        <li style = "color: white;">Insta by Practo</li>
+        <li style = "color: white;">Quickwell by Practo</li>
+        <li style = "color: white;">Practo Profile</li>
+        <li style = "color: white;">Practo Reach</li>
+        
+        </ul>
+        
+        
+        
+                </div>
+                <div style = "margin :50px 50px 100px ">
+        
+                    <h4 style = "color: white;">More</h4>
+                   
+        
+                   
+        <ul>
+        
+          
+        <li style = "color: white;">Help</li>
+        <li style = "color: white;">Developers</li>
+        <li style = "color: white;">Privacy Policy</li>
+        <li style = "color: white;">Terms & Conditions</li>
+        <li style = "color: white;">Healthcare Directory</li>
+        <li style = "color: white;">Practo Careness</li>
+        <li style = "color: white;">Corporare Welfares</li>
+        
+        </ul>
+        
+        
+        
+                </div>
+                <div style = "margin :50px 50px 100px ">
+        
+                    <h4 style = "color: white;" >Social</h4>
+                   
+        
+                   
+        <ul>
+        
+          
+        <li style = "color: white;">Facebook</li>
+        <li style = "color: white;">Twitter</li>
+        <li style = "color: white;">Linkedin</li>
+        <li style = "color: white;">Youtube</li>
+        <li style = "color: white;">Github</li>
+        
+        </ul>
+        
+        
+        
+                </div>
+                </div>
+        
+                <div style = "background-color : rgb(50, 50, 146)">
+                    <div style =" margin : -20px 350px 10px 500px; background-color : rgb(50, 50, 146);">
+        <img src = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASERMSEBAVFRUVFhUYFRUVFRURFRMQFxcWGhgVFRUYHSggGBolHxgVITEhJSkrLi8uFyAzODMuNygtLisBCgoKDg0OGhAQGi0lICUtLi0rLzA3NS0tLS0rLTItKy0tLS0tLy0tLS0vLS0tLS0tLS0rLS0tLS0tLSstLS0tNf/AABEIAJUBUgMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABwgEBQYBAgP/xABGEAACAQMABwMIBgcFCQAAAAAAAQIDBBEFBgcSITFRQWFxEyIycoGRobEUNUJSc7IjNGLB0eHwM0RTg5MXJENUgpLCw9L/xAAaAQEAAgMBAAAAAAAAAAAAAAAAAgMBBAUG/8QAKREBAAIBAwMDBAIDAAAAAAAAAAECEQMEEhMhMSJBUQUyM4Gh8GFxkf/aAAwDAQACEQMRAD8A4AAHpmqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMgAAAAAAAwAAAADAAAyAAAAAMgAAAH3QinKKfJySfg2jEz2yPgE+f7MNE/8vL/Xr/8A2RPtD0RQtL6dG3i401Cm0nKU3mUcvjJt/E1tLdU1LcYSmuIy5sAGygAAyAAAAAAAAAAAAAAAAAAAAHsYttJLLfBJcW33AmcPAbanq5ctZ3Eu5ySfu/ia+7tKlJ7tSDi+/GH4NcGFddbTtOK2iWz1Y1br39SVOg4qUY7z324rGcdH3G+vdl9/SpzqylS3acJTeJNvdim3hbvF8DYbEP1uv+EvzE0SfA5m43V9PUxDZrSJhA+r+zG9uYqpUcaEWk0p5c2n27i5e33I3Nxscq7vmXcW+koNJ/ElHSWl7a3SlcV6dJPlvyUcvuT5vwPjRenrS5z9HuKdRrmoSTkvGPNFE7vXn1R4S4VV41i1burKe7c0mk/RmvOhPHSXXufE1BaTSmjqVxSlSrQU4TWGn810a7GVx1p0FOyup28+KjxhL71N+i/Hsfeje2u66vafKF648N5onZrfXFGnXpypblSKlHek08Pqt3gYWldRb6hWpUNxVKlVSlFU23iMWk3JvCSWeZNWoH1ZZ/gQ+RvFTjvb2FnGM9u7zxnoac77UraUuEYQrQ2SXzjvTq0ov7uXL44OAqwcZOL5xbT8U8fuLR1tI0IvdlWpqT7HOKfuyQHqlq67/SE6bz5OMpzqtfcUsbqfWTePf0Njbbm1otOp4hi1faGHqzqld3zboU/MTw6ssxgn2pP7T7l7TtaexypjzryOe6Dxn3kr2lvClCNOnFRjFYjFLCSXRIwNJ6yWVu924uqVOX3ZSW9/2ria1t7q3n0JRSI8oV1j2c31rFzWK1Nc5U85iusoPs70ZdLZTpCSTU6OGk1577f+kmmw0hQrx36FWFSP3oSU170ZSQne6sRg4QrFrBoarZ15W9Zxc4qLe621iSTXFmuOy2ufWlX1KX5EdZsm1OhGnG+rxTnLjRT4qEOypj7z7Gb87jhoxe3mVfHM4ctoHZnf3EVOaVCL5eUzvteouK9pvp7G544Xkc99N4+ZLFSrGCcpyUYri23hJdW3yNRQ1v0dOfk43tByzhLykeL6J8n7Dnzu9a3eqzhVCOsmot9ZJznBVKS51KfFRXWcecfH4nO23pw9aPzRaepKO63JrGOLeMbvf3FeNb1Y/Ts6Plmm5Lewv0anvLKpPtj8Ohtbfc21Ymto/aFq4WLZF2vmoF5eXs69GVNQlGCSlJp5jHD4JEomm0nrVYW9R0q9zCnNJNxlnOGsp8jnaN70tmnlbMRjuhzSuzW+t6NStUlS3acXKWJSbwunA4wnTXDXHR1WxuadK7pynOlJRis5b6cjg9l+qKvKrrV45oUn6L5VauMqL/ZXBvrwXU6eluLdOb6vsqtXviGq1a1Kvb1b9Knu03/xamYxfqLnL3Y7zsKexyePOvI57qbx8yWYRUVhJJJYSXBJdEjT3Wt2jqc9ype0YyTw05rzX+0+Ufaalt5rXn0+E+FY8oj05svv6EXOnu14rmqeVPHdB8/ZxOHaw2mmmuaeU0+jT45LV0K8JxUoSUk1lOLUk11TXMjratqdGrSleUIJVafGqkv7Wkub9Zc89qz3F2hvZm3G6NqR7IZANjZaEr1VvRhiPY5PCfgufwOkovqVpGbS1wM++0PXorM4+b96L3kvHtRgApet4zWcgAMpAAAAAAAAB0+p9nF71VrLT3Y93VnMHTan3sVvUnwbe9HvfajEtTfcujPF1JhaYs41aUotcUm4vpJGaYGmr2NKlJt8WmortbZF5/Qi3UrxfvsQ/W6/4S/MTHd1lCE5vlCLk/CKz+4hvYh+t1/wl+YmW6oqcJQlylFxfg1hnH3v5v8Aj2WnnirFprS9W7rSr1m3KT4LOVCPZCPcjHs7upRqRqUpuM4PMZLhh/12GXp/QlazrSoVk016MuypDslF95jaOsatepGlRi5zk8JL4tvsS7WdavDh/jCnvlZTVnSf0m0oXDWHUpxlJLkp4xJL2pkb7c7RKVrW7XvwfgsP95JWrmjfo1rQt858nTjFvlvSx5z9ry/aRptzvE52tFc4qc33b2Ir5HJ23544+O6632u91A+rLP8AAh8jQ7XdP1ba2hToycZ1pNOS4NU4rMsd74L2m+1A+rLP8Cn8jhtu39z/AM7/AMDGjWJ3Hf5LfaidrPPjnnnjnx6ky7D7NRtrirjzp1VHP7EIrC98pe8hsmPYfeJ29xR+1CopY/YnHC+MZHQ3uel2V6fl1mvWmJWljWrw9NJRg+eJzain7GyudWrKUpTlJylJtyk3ltvq2WP120M7yyq0I+k0pQ7PPg1KK96K43FCdOcqdSLjOLalGSw4tdjRV9P44n5S1M5bbVDTdSzuqdSm3uuUY1I54TptpNNdePB9hZRMrfqXoCpe3VOEIvcjKMqs+yEE8vL6vCSXf0LIpFO/484x592dPOEDbUqHlNMSp5xv+QjnpvKK/eTna0Y04QhBYjCMYxXSMUkl7iDNqdd09LyqLi4KhJd7jGLXyJys7iNWnCpB5jOMZRfWMkmiG5z0tP8A0zXzKHdsunKk7lWik1TpxjKSX26ks+l1xwwiOSSdsugKka6vIxbpzjGM2vsTjwTl0T4LPLPiRq2dHa8elHFXby3FxrLeTto2s68nSjnC7ZJ8d2T5tLsRrLb04etH5o371Hv/AKKrryL3Xl7nHyqh2TcOeHxeOeDQWvpw9aP5kTiacZijHf3WrZAW1360q/h0vyk+5ID2vRa0pPKxmlSa71hrK68U0czYfl/S2/hxhYfZrZKlo23SWHOLnLvlNt/wK75LD7M79VdG2+HlwThL1otr+Bs/UM8I+ENPy022LT1S3t6VGlJxlcOeZLg1SpqO8k+zLnD4kJInHa9q9UurenWoxcp27m3FcXKlNR38LtacIPwTINyT2HHp9vPuamcu+2QafqUryFq5N0q6liL5RqxjKe8umVGSfXJN9WmpJxa4NNPwfAhTY9q/UqXUbuUWqVFT3ZPlOrKLhhdUk5e3BNdeooxcnwUU2/BcTR3nHq+n+ynTOO6t9touP06pRfo06k+HPzYt4XyOzX9dxxNvpZfTZ136M5zbfSMm8P5HaxaaynlPk1yOvGeMPOfVeXUifbHYlFNYfFMj7TNqqVacI8k8rwfEkCc0k23hJZb7EiPtL3aq1pzXJvh6qx/XtJVZ+lRbnPxj+WGACTtgAAAAAAAATxy/p93QADZw0/cpY8pnvcYt+/Bg3NzOpLeqScn1f7lyR+QMIV0qVnMQkfYh+t1/wl+YmabSTb5dueCS7yGdiH63X/CX5iW9Ofq1f8Kp+RnF3nfWn9Nqn2vq8sKFeO7XpU6seaVSMai8VvJ+880fom2oZVChTpZ5+ThGGfFxXEgjVzaHf2kFBSVWCSxGpltLopJ5wbyvtgu2sQtqUX1zKWPZnBmdnrR2jvBzhLGmdLUbWjKtXmoQiu3m32Riu1voVz1m01UvLmpcVFjeeIx57lNco/12tnmndP3V5Pfuarnj0YrhCHqxXD28zWG9tdr0u8+Vd7ZWP1B+rLP8CHyOH26/3P8Azv8A1nKaM2iaRt6NOhSlTUKcVGOae891csvPHxNbrJrTdX3k/pLg/J727uw3Mb2M549xTo7XUrrc58d0ptExhpTfak6wuxu41uLg04VYrtptrLx1TSfs7zQg6F6xaJiVcStNYXtOtTjVozU4SWYyi8p/zPxv9C2tfDr21Kq1ydSnGbS6JtZK76vaz3dk27eq1F8XCXnQk+ri+T7+B2VPbDdJYdrSb6701l9cHItsdWtvQti8T5S5bWtKjDdpwhSgvswjGnFexYSMkrxrDr5fXfmzmoQyn5OmsReHnEnzkvEzv9qelPv0v9L+YnY6uMs84fltc+tKvqUvyI6fZTrpCMI2NzNRaeKE5PCafKk32Pp44I205pitd1pV67i5yUU91bqxFYXD2GA0dCdvFtKKW8wr5d8wtbKCaw1lPmnxTXRrtNdQ1csYT8pCzoRnnKlGlTUk+qaXB+BCGgdomkLWKhvqrBco1Vlpd0ufzN9LbDc44WtLPrTa9xz52WtWcQs5wmCc4xTcmklltt4SS7Wyvmv2lbSvdupZUoxUX51SK3VWqZ9NR6d/bzMfWHXK9vU41quKf+HBbkH44eZe0582trtJ055WQtfKy2qum6d5bU6tOSbwlNdsKiXnKXR/xMzSGh7a4x9IoU6uOXlIRnjwyuBWvRGmLi1n5S3qyhLtxxUl0lF8GdXT2q6SSw3Sfe6f8yi+xvFs0lKLxjukTXbQtpQ0bduhbUab8nzhThB+ku1LJGuzXW5WNZ06z/3eq1vPn5Oa4KeOnJP2MxNNa/aQuqcqVWpBU5rEoxgo5XRtnLmzo7aenNdT3RtbvmFqqNWM4qUJKUZLKlF5TT5NNGDdau2NWe/Vs6E5vnKVKEm33trj7Sv+r2tt5ZcKFXzP8Ofnwz3J8vYdfDbDc442tJvqpTXwZp22WrWfSlziUwxgopKKSSWElwSXgRntX1zhGnKyt5pznwrSi8qEO2nlfafDK7F4nH6d2kaQuYuCmqMHwapZUsdN98fcceXaGxmLcrsWv8Bm2ela9JYhUaXR8V8TCB01FqVtGLRlmXmlK1VYqVG105L3IwwAVpWsYrGAABIAAAAAAAAAAAABlImxSrGN1XcpJfolzaX2u8ljTd3T+jV/0kP7Kp9pfcfeVkUscj3ffV+9mlrbTqanPKcXxGHxHkegG4rAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/Z" style = "width : 350px ; height : 150px; background-color: blue;"/>
+        </div>
+        
+            <p style = "text-align: center; color : white ; margin-top:-20px">Copyright © 2017, Practo. All rights reserved.</p>
+        
+        
+        
+                </div>
+
+
+
+
+                 
+             
+        
+</div>    
+</body>
+</html>

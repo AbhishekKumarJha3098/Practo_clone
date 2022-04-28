@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+   signup
+</title>
+</head>
+
+<body style = "background-image:  blue;">
+  <div style = " display: flex;">
+  <div>
+  <img src = "https://accounts.practo.com/static/images/illustration.png"/>
+  </div>
+  <div style = "margin : 40px 100px 60px 400px">
+    <h1 style = "text-align: center;color : red">Signup</h1></br></br> </br></br> </br>
+    <div style = "border : 1px solid rgb(126, 53, 53); height : 300px; padding : 50px">
+    <form onSubmit = signup(event) id = "myform" style = "text-align: center">
+<label style = "text-align: center;color : red">Name :
+: <input type = "text" id = "name" placeholder = "Name"></label> </br> </br>
+
+<label style = "text-align: center;color : red">Email:</label>
+ <input type = "email" id = "email" placeholder = "Email"> </br> </br>
+
+
+ <label style = "text-align: center;color : red">Password:</label>
+ <input type = "password" id = "password" placeholder = "Password"> </br> </br>
+
+<input type = "submit"/>
+
+</div>
+
+</form>
+</div>
+
+
+<script>
+function signup(e) {
+    e.preventDefault();
+
+    let myname = document.getElementById("myform");
+
+    let name = myname.name.value;
+    
+    let email = myname.email.value;
+    
+    let password = myname.password.value;
+
+    
+  if (localStorage.getItem("user") == null) {
+
+localStorage.setItem("user", JSON.stringify([]));
+  }
+
+  let user = {
+      name,
+      email,
+      password
+  }
+
+
+let arr = JSON.parse(localStorage.getItem("user"));
+      arr.push(user);
+  
+  localStorage.setItem("user", JSON.stringify(arr));
+  
+  
+ 
+
+
+}
+
+
+</script>
+</body>

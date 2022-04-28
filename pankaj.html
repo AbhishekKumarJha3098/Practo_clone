@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container{
+       /* position: fixed;*/
+         top: 0;
+         left: 0;
+        z-index: 9999;
+        display:flex;
+        width:100%;
+        background-color: white;
+        height:65px;
+        padding-bottom: 10px;
+    }
+    img{
+        width:80px;
+        height:40px;
+        
+    }
+    #pic{
+        margin: -80px 30px 0px 80px;
+       
+    }
+    #large{
+       
+        color:rgb(17, 10, 10);
+        font-family: 'Manrope', sans-serif;
+        font-size:14px;
+       
+    }
+    #small{
+      
+        color: rgb(19, 18, 18);
+        font-size: 12px;
+        font-family:  'Assistant', sans-serif;
+        margin-top:3px;
+       
+       
+    }
+    .d1{
+        margin:20px 10px 0px 10px;
+       
+    }
+    
+    .d2{
+        margin:20px 30px 0px 25px;
+        
+    }
+    #first{
+        color:blue;
+        font-family: 'Manrope', sans-serif;
+        font-size:14px;
+        
+    }
+.wrapper{
+     margin-top:12px ;
+}
+input{
+    width:90px;
+    height:30px;
+    margin:25px 10px 0px 10px;
+}
+
+
+img {
+
+    height: 250px;
+    width: 100%;
+}
+#top{
+    /* position: fixed;
+    background-color: ghostwhite; */
+    display: flex;
+    margin: 20px 20px 20px 40px;
+}
+#top button{
+    width: 500px;
+    height: 30px;
+    margin-left: 90px;
+    font-size: 19px;
+    color:darkgray;
+}
+#mySlideshow{
+    background-color:lightblue;
+    padding: 10px 100px 0px 110px;
+}
+#vc{
+    margin-left: 440px;
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    background-color: darkturquoise;
+    padding: 10px;
+}
+#container2{
+    width: 83%; 
+    margin: auto;
+     /* margin: 50px 150px 50px 150px; */
+}
+.contA{
+    display: flex;
+    /* margin: auto;
+    width: 90%; 
+    justify-content: space-between;*/
+    column-gap: 10px;
+    padding: 5px 5px 5px 5px;
+    
+}
+#contB{
+    display: flex;
+    column-gap: 20px;
+    flex-basis: 100px;
+}
+.countb{
+    display: flex;
+    column-gap: 4px;
+}
+.countb h3{
+    margin-top: 10px;
+}
+.countb .pc{
+    color: green;
+}
+.countb .discnt{
+    margin-top: 13px;
+}
+ img{
+    width: 100%;
+}
+#contC{
+    display: flex;
+    column-gap: 40px;
+    margin-top: 40px;
+}
+#contC h6{
+    color: darkturquoise;
+    font-size: 12px;
+}
+#contC p {
+    font-size: 20px;
+}
+#contD{
+    display: flex;
+    column-gap: 40px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 40px;
+}
+#contD img {
+    height: 100%;
+    width: 100%;
+}
+#imgbg{
+    background-color:lightblue;
+    padding: 10px 100px 2px 110px;
+}
+#imgbg img{
+    /* width: 100%; */
+    height: 280px;
+   
+}
+#applink{
+    display: flex;
+    column-gap: 30px;
+}
+#phnum{
+    width: 250px;
+    height: 40px;
+    /* margin-bottom: 20px; */
+}
+#appbg{
+    padding: 19px;
+    text-align: center;
+    background-color: darkturquoise;
+    /* border: solid red 1px; */
+    height: 10px;
+    width: 120px;
+    margin-top: -1px;
+}
+#logo{
+    display: flex;
+    column-gap: 30px;
+    margin-top: 20px;
+}
+.logoA{
+    width: 200px;
+    height: 50px;
+}
+#text{
+    background-color: white;
+    margin: -100px 100px 10px 100px;
+    font-size: 15px;
+}
+#review{
+    display: flex;
+    column-gap: 20px;
+}
+#reviewbox{
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: -100px;
+}
+#review img{
+    margin-top: 10px;
+    margin-left: 600px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+#pfont{
+    margin: 50px 100px 10px 100px;
+    font-size: 24px;
+}
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div id="pic" >
+            <img class = "img1" src="https://st1.bgr.in/wp-content/uploads/2017/04/practo-new-logo.jpg" />
+   
+          </div>
+   
+          <div class="d1">
+              <div id="first"><b>Find Doctors</b></style></b></div>
+             <div id="small"><b>Book an appointment</b></div>
+         
+          </div>
+   
+          <div class="d1">
+           <div id="large"><b>Video Consult</b></div>
+          <div id="small"><b>Consult top doctors</b></div>
+      
+          </div>
+   
+   
+          <div class="d1">
+           <div id="large"><b>Medicines</b></div>
+          <div id="small"><b>Practo pharmacy</b></div>
+      
+          </div>
+   
+         
+          <div class="d1">
+           <div id="large"><b>Labs Tests</b></div>
+          <div id="small"><b>Book test & checkup</b></div>
+      
+           </div>
+   
+            
+           <div class="d1">
+               <div id="large"><b>Surgeries</b></div>
+              <div id="small"><b>Expert surgical care</b></div>
+          
+            </div>
+   
+            <div class="d2">
+              
+               <section class="wrapper">
+                   <select>
+                     <option value="" selected>For Providers</option>
+                     <option>Software for providers</option>
+                     <option>List your practice for free</option>
+                     <option>Corporate wellness</option>
+                   </select>
+                 </section>
+          
+            </div>
+   
+            <div class="d2">
+              
+               <section class="wrapper">
+                   <select>
+                     <option value="" selected>Security & help</option>
+                     <option>Data Security</option>
+                     <option>Help</option>
+                   </select>
+                 </section>
+          
+            </div>
+   
+            <input type="button" value="login/sign-up">
+        </div>
+
+
+    <div id="top">
+        <div>
+            <button>for medicines, health products and more</button>
+        </div>
+        <div id="vc">VIEW CART</div>
+    </div>
+    <div id="mySlideshow"></div>
+    <div id="container2">
+        <h2>Browse medicines & health products</h2>
+        <p>Health Condition</p>
+        <div class="contA">
+            <div>
+            <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/h-c-5.a8ae14dd.png "/>
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/h-c-6.51626a1a.png" />
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/h-c-7.476668e1.png"/>
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/h-c-4.5e130b77.png"/>
+            </div>
+        </div>
+        <p>Categories</p>
+        <div class="contA">
+            <div>
+            <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/cat-2.640dcfd5.png"/>
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/cat-6.aa7d1cba.png"/>
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/cat-9.5029c27e.png"/>
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/cat-8.c4cbe33a.png"/>
+            </div>
+        </div>
+        <p>Popular Products</p>
+        <div id="contB">
+            <div>
+            <img src="https://www.practostatic.com/practopedia-v2-images/res-150/1ae29e21f975c617b63e11731987adf218b66b661.JPG"/>
+            <p>BEVON Capsule</p>
+            <div class="countb">
+                <h3>₹96.60</h3>
+                <p class="discnt"><del>₹120.75</del></p>
+                <p class="pc">20%off</p>
+            </div>
+            
+            <!-- <button id="" onclick="click()">Add</button> -->
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/practopedia-v2-images/res-150/c1fdd9113cb8033b95d57cf3b62bfddea28f9f321.jpg"/>
+                <p>SHELCAL 500MG TABLET t10 idscale 15's</p>
+                <div class="countb">
+                    <h3>₹92.40</h3>
+                    <p class="discnt"><del>₹108.7</del></p>
+                    <p class="pc">15%off</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/practopedia-v2-images/res-150/2ff9f3aa807029d7fe8e27ef2b74357e1e7c409a1.jpg"/>
+                <p>KERABOOST TABLET t1- idscale 10's</p>
+                <div class="countb">
+                    <h3>₹127.20</h3>
+                    <p class="discnt"><del>₹159</del></p>
+                    <p class="pc">20%off</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/practopedia-v2-images/res-150/33bf2e821a6c0a9d5dc52fc2a825f2cd5002b8da1.JPG"/>
+                <p>SCALPE + SHAMPOO W1 75ML</p>
+                <div class="countb">
+                    <h3>₹234.00</h3>
+                    <p class="discnt"><del>₹260</del></p>
+                    <p class="pc">10%off</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/practopedia-v2-images/res-150/82a76f0c1541a288d5589e6f929e52a8230888f31.JPG"/>
+                <p>ANTOXID HC Capsule</p>
+                <div class="countb">
+                    <h3>₹389.60</h3>
+                    <p><del>₹487</del></p>
+                    <p class="pc">20%off</p>
+                </div>
+            </div>
+        </div>
+        <div id="contC">
+            <div>
+                <h6>INTRODUCING CONSULTATION DESK</h6>
+                <p>Don't self medicate. Talk to an expert, Consult a doctor in less than 2 minutes.</p>
+            </div>
+            <div>
+                <h6>INTRODUCING CONSULTATION DESK</h6>
+                <p>Don't self medicate. Talk to an expert, Consult a doctor in less than 2 minutes.</p>
+            </div>
+        </div>
+        <div id=contD>
+            <div>
+                <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/mar-card-1.d328c6a9.png" />
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/mar-card-2.5a0b85e1.png"/>
+            </div>
+        </div>
+    </div>    
+        <div id="imgbg">
+            <img  src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/full-width-4.2a2a16cc.png" />
+        </div>
+
+
+     <div  id="reviewbox"> 
+            <div>
+                <h1>What our users have to say</h1>
+                 <p id="pfont"><b style="font-size: 40px;">''</b> Very easy to book, maintain, history.Hassle free from old version of booking appointment via telephone.Thanks to Practo.in that made it quite easy.</p>
+            </div>
+                <div id="review">
+                    <div>
+                        <img src="data:image/jpeg;base64,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"/>
+                    </div>
+                    <div>
+                        <p>Pankaj Kumar</br>Oct 2 2021 at 11:30PM</p>
+                    </div>
+                    
+
+                </div>
+                    
+            </div>
+            
+                <div  style = "margin : 200px; display : flex"><div>
+            
+            <img src = "https://www.practostatic.com/consumer-home/desktop/images/1540464906/app-banner@2x.jpg" style = "width : 350px; height : 400px; margin: 100px"/>
+            
+            </div>
+            <div style = "margin : 80px">
+            <h1>Download the Practo app</h1>
+            <p>Book appointments, Order health products, Consult with a doctor online,
+                Book health chekups, store health records & read health tips.</p>
+            <h3>Get the link to download the app</h3>
+            <div id="applink">
+                    <div><input id="phnum" type = "number" placeholder = "+91     Enter phone number "/></div>
+                <div>
+                    <p id="appbg">Send app link</p> 
+                </div>
+            </div>
+            <div id="logo">
+                <div>
+                    <img class="logoA" src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/play-store.3556fc81.png"/>
+                </div>
+                <div>
+                    <img class="logoA" src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/app-store.e30d53a6.png"/>
+                </div>
+            </div>
+            </div>
+            
+            
+            
+                </div>
+
+                <div id="text">
+                    <h4>Order Medicines & Health Products Online : India's most reliable Online Medical Store
+                    </h4>
+                    <p>Find and buy medicines online with Practo Pharmacy. Browse through prescription medicines, OTC products, health & wellness products on an online pharmacy that provides hassle free service across 100+ cities in India With an extensive catalogue of medicines and healthcare products provided on an extensive and easy to navigate destination for online medicine shopping, Practo Pharmacy provides added advantages which include:</p>
+                    <ui>
+                        <li>Automated prescription refill: Set up scheduled refills for your online medicine orders and never worry about running out of your meds
+                        </li>
+                        <li>Doorstep delivery: No more trips to the pharmacy, with on-time delivery of your medicines right to your doorstep
+                        </li>
+                        <li>Medicine order history: No more scrolling through pages to find what you need. Just check your medicine order history and re-order
+                        </li>
+                        <li>Exclusive offers and discounts: Enjoy cashbacks, flat discounts and other exclusive offers on your medicine orders
+
+                        </li>
+                        <p>see more</p>
+                    </ui>
+                </div>
+            <!-- footer -->
+
+       <div style = "background-color: rgb(50, 50, 146); display : flex; margin : 0px">
+        <div style = "margin :50px 50px 100px ">
+
+            <h4 style = "color: white;">Practo</h4>
+<ul>
+
+    <li style = "color: white;">About</li>
+     <li style = "color: white;">Blog</li>  
+        <li style = "color: white;">Careers</li>
+        <li style = "color: white;">Press</li>  
+        <li style = "color: white;">Contact Us</li>
+</ul>
+
+
+
+        </div>
+
+
+        <div style = "margin :50px 50px 100px ">
+
+            <h4 style = "color: white;">For Patients</h4>
+<ul>
+
+  
+<li style = "color: white;">Search for doctors</li>
+<li style = "color: white;">Search for clinics</li>
+<li style = "color: white;">Search for hospitals</li>
+<li style = "color: white;">Book Diagnostic Tests</li>
+<li style = "color: white;">Book Full Body Checkups</li>
+<li style = "color: white;">Practo Plus</li>
+<li style = "color: white;">Read health articles</li>
+<li style = "color: white;">Read about medicine</li>
+<li style = "color: white;">Practo drive</li>
+<li style = "color: white;">Health app</li>
+</ul>
+
+
+
+        </div>
+
+        
+        <div style = "margin :50px 50px 100px ">
+
+            <h4 style = "color: white;">For doctors</h4>
+            <p style = "color: white;">Practo Profile</p>
+
+            <h4 style = "color: white;"> For Clinics</h4>
+<ul>
+
+  
+<li style = "color: white;">Ray by Practo</li>
+<li style = "color: white;">Practo Reach</li>
+<li style = "color: white;">Ray Tab</li>
+<li style = "color: white;">Practo Pro</li>
+
+</ul>
+
+
+
+        </div>
+
+        <div style = "margin :50px 50px 100px ">
+
+            <h4 style = "color: white;">For Hospitals</h4>
+            
+
+            
+<ul>
+
+  
+<li style = "color: white;">Insta by Practo</li>
+<li style = "color: white;">Quickwell by Practo</li>
+<li style = "color: white;">Practo Profile</li>
+<li style = "color: white;">Practo Reach</li>
+
+</ul>
+
+
+
+        </div>
+        <div style = "margin :50px 50px 100px ">
+
+            <h4 style = "color: white;">More</h4>
+           
+
+           
+<ul>
+
+  
+<li style = "color: white;">Help</li>
+<li style = "color: white;">Developers</li>
+<li style = "color: white;">Privacy Policy</li>
+<li style = "color: white;">Terms & Conditions</li>
+<li style = "color: white;">Healthcare Directory</li>
+<li style = "color: white;">Practo Careness</li>
+<li style = "color: white;">Corporare Welfares</li>
+
+</ul>
+
+
+
+        </div>
+        <div style = "margin :50px 50px 100px ">
+
+            <h4 style = "color: white;" >Social</h4>
+           
+
+           
+<ul>
+
+  
+<li style = "color: white;">Facebook</li>
+<li style = "color: white;">Twitter</li>
+<li style = "color: white;">Linkedin</li>
+<li style = "color: white;">Youtube</li>
+<li style = "color: white;">Github</li>
+
+</ul>
+
+
+
+        </div>
+        </div>
+
+        <div style = "background-color : rgb(50, 50, 146)">
+            <div style =" margin : -20px 350px 10px 500px; background-color : rgb(50, 50, 146);">
+<img src = "data:image/jpeg;base64,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" style = "width : 350px ; height : 150px; background-color: blue;"/>
+</div>
+
+    <p style = "text-align: center; color : white ; margin-top:-20px">Copyright © 2017, Practo. All rights reserved.</p>
+
+
+
+        </div>
+
+
+
+      
+
+        </div>
+            
+    
+</body>
+</html>
+
+<script>
+
+let images = [
+    "https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/full-width-3.8c8ab982.png",
+    "https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/full-width-2.573c08f7.png",
+    "https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/full-width-1.48172107.png",
+    "https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/full-width-4.2a2a16cc.png",
+  ];
+
+    let container = document.getElementById("mySlideshow")
+
+    function startSlideshow(){
+
+        let counter = 0;
+
+        let interval = setInterval (function (){
+
+            container.innerHTML = null;
+
+            if(counter === images.length){
+                counter =0;
+            }
+            let img = document.createElement("img");
+            img.src = images[counter];
+
+            container.append(img);
+
+            counter += 1;
+        }, 3000);
+        }
+
+        startSlideshow();
+
+</script>
